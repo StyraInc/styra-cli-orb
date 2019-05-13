@@ -8,4 +8,4 @@ workflows:
   check-workflow:
     jobs:
     - styra-orb/styra-policy-check:
-        context: SystemID_cf8d422d77e943c4a09c75236cd1630 # test.styra.com API token
+        context: SystemID_cf8d422d77e943c4a09c75236cd1630f
