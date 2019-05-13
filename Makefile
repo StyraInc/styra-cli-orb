@@ -1,7 +1,7 @@
 # Requires circleci CLI installation
 # - macos: brew install circleci
 
-ORB_VER ?= 0.0.3
+ORB_VER ?= 0.0.4
 
 .phony: publish publish-dev validate
 

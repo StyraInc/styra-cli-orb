@@ -4,7 +4,7 @@ description: >
   This orb is a wrapper for the Styra cli tool. The tool allows to run policy
   checks on your kubernetes resource yamls. To use this orb, you must have a
   Styra account and a Styra API token stored in the evironment variable: STYRA_TOKEN
-  For detailed usage information, see https://github.com/styrain/styra-cli-orb
+  For detailed usage information, see https://github.com/styrainc/styra-cli-orb
 
 examples:
   check-system-policies:
