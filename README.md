@@ -46,7 +46,7 @@ Important: Your CircleCI setup will need to pass an environment variable `$STYRA
 System id can be retrieved from https://`youraccount`.styra.com -> System (from step2) -> settings
 
 ```
-cat > .styra.yaml <<EOF
+cat > `youraccount`.styra.yaml <<EOF
 checks:
   foo:
     system_id: b52e42c6ab574d9ab8bc5e7a86ce72ea
