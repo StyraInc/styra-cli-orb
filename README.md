@@ -8,7 +8,7 @@ Note: To use this orb you need a valid Styra account.
 ## How to get started
 
 ## Create an API Token - Token will be used in below steps
-Go to https://<youraccount>.styra.com -> settings -> API Tokens ->  Add API token
+Go to https://`youraccount`.styra.com -> settings -> API Tokens ->  Add API token
 
 ## Create a new System
 
@@ -43,7 +43,7 @@ Important: Your CircleCI setup will need to pass an environment variable `$STYRA
 
 ## Create styra yaml in the root directory of the git repository
 
-System id can be retrieved from https://<youraccount>.styra.com -> System (from step2) -> settings
+System id can be retrieved from https://`youraccount`.styra.com -> System (from step2) -> settings
 
 ```
 cat > .styra.yaml <<EOF
