@@ -1,4 +1,4 @@
-# Styra poilicy check orb for CircleCI
+# Styra policy-check orb for CircleCI
 
 ## What is this?
 With this orb you can easily check kubernetes policies into your CircleCI workflows
