@@ -1,6 +1,7 @@
 # Styra policy-check orb for CircleCI
 
 ## What is this?
+
 With this orb you can easily validate and enforce policies on Kubernetes resources in CircleCI workflows. 
 
 Note: To use this orb you need a valid Styra account, if you do not have one already, visit https://styra.com
