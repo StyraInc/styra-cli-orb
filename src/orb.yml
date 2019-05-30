@@ -3,7 +3,8 @@ version: 2.1
 description: >
   This orb is a wrapper for the Styra cli tool. The tool allows to run policy
   checks on your kubernetes resource yamls. To use this orb, you must have a
-  Styra account and a Styra API token stored in the evironment variable: STYRA_TOKEN
+  Styra account in the environment variable: STYRA_TENANT, and a
+  Styra API token stored in the evironment variable: STYRA_TOKEN
   For detailed usage information, see https://github.com/styrainc/styra-cli-orb
 
 examples:
@@ -32,8 +33,11 @@ commands:
       api_token:
         description: Styra API Token for your styra account
         type: env_var_name
+      tenant:
+        description: Styra name of your styra account (e.g. test.styra.com)
+        type: env_var_name
     steps:
-      - run: styra-cli configure -i test.styra.com -t ${<< parameters.api_token >>}
+      - run: styra-cli configure -i ${<< parameters.tenant >>} -t ${<< parameters.api_token >>}
       - run: styra-cli validate check-local -r .
 
 jobs:
@@ -43,3 +47,4 @@ jobs:
       - checkout        # check out the code in the project directory
       - policy-check:   # run the policy check cmd
           api_token : STYRA_TOKEN
+          tenant: STYRA_TENANT
