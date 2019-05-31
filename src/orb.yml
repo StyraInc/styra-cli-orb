@@ -38,7 +38,16 @@ commands:
         type: env_var_name
     steps:
       - run: styra-cli configure -i ${<< parameters.tenant >>} -t ${<< parameters.api_token >>}
-      - run: styra-cli validate check-local -r .
+      - run: |
+          mkdir test
+          styra-cli validate check-local -r . -o test/results.json
+      - run:
+           when: on_fail
+           command: cat test/results.json
+      - store_test_results:
+           path: test
+      - store_artifacts:
+           path: test
 
 jobs:
   styra-policy-check:

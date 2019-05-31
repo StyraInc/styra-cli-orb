@@ -9,6 +9,7 @@ Note: To use this orb you need a valid Styra account, if you do not have one alr
 ## How to get started
 
 ## Step 1: Create an API Token - Token will be used in below steps
+
 Go to https://`youraccount`.styra.com -> Settings -> API Tokens ->  Add API token
 
 ## Step 2: Create a new System
