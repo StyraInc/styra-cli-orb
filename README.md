@@ -36,7 +36,7 @@ Example:
 version: 2.1
 
 orbs:
-  styra-orb: styra/cli@0.0.4
+  styra-orb: styra/cli@0.0.5
 
 workflows:
   version: 2.1
@@ -45,14 +45,17 @@ workflows:
     - styra-orb/styra-policy-check:
         context: SystemID_b6c4e9e6e9fa410991061f3fa3b3d0ca
 ```
-Important: Your CircleCI setup will need to pass an environment variable `$STYRA_TOKEN` to your CircleCI workload (Supply the API token generated in Step 1.)
+Important: Specify the following Environment variables in your CircleCI project 
+
+`$STYRA_TOKEN` (Supply the API token generated in Step 1.)
+`$STYRA_TENANT` (E.g., `youraccount`.styra.com) 
 
 ## Step 4: Create styra yaml in the root directory of the git repository
 
-System id can be retrieved from https://`youraccount`.styra.com -> System -> Settings
+System id can be retrieved from https://`youraccount`.styra.com -> System -> Settings. Specify this value for system_id variable in .styra.yaml
 
 ```
-cat > `youraccount`.styra.yaml <<EOF
+cat > .styra.yaml <<EOF
 checks:
   foo:
     system_id: b52e42c6ab574d9ab8bc5e7a86ce72ea
