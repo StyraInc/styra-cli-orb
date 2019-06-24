@@ -36,7 +36,7 @@ Example:
 version: 2.1
 
 orbs:
-  styra-orb: styra/cli
+  styra-orb: styra/cli@0.0.7
 
 workflows:
   version: 2.1
