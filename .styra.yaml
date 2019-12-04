@@ -1,6 +1,5 @@
 checks:
   test:
-    system_id: cf8d422d77e943c4a09c75236cd1630f
-    policy: admission_control
+    system_id: c4f251dc49594b50b25e566a3a62a419
     files:
       - nginx-pod.yaml
