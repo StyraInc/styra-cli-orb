@@ -8,4 +8,4 @@ workflows:
   check-workflow:
     jobs:
     - styra-orb/styra-policy-check:
-        context: SystemID_cf8d422d77e943c4a09c75236cd1630f
+        context: stage.styra.com_c4f251dc49594b50b25e566a3a62a419

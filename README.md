@@ -59,7 +59,6 @@ cat > .styra.yaml <<EOF
 checks:
   foo:
     system_id: b52e42c6ab574d9ab8bc5e7a86ce72ea
-    policy: admission_control
     Files:
        - k8s/prod/*.yaml
        - k8s/*/*.yaml
